@@ -19,13 +19,13 @@ starts with WASM's magic number or not.
 The WASM magic number is the following byte sequence: `0x00, 0x61, 0x73, 0x6d`.
 
 ## Solidity
-Support of compiling to ewasm can be accompilshed by adding a new backend to
-the solidity compile. Ewasm support for Solidity is part of the MVP.
+Support of compiling to ewasm can be accomplished by adding a new backend to
+the Solidity compiler. Ewasm support for Solidity is part of the MVP.
 
 ## Transcompiler
-A post-MVP goal is to have the transcompiler it self become a contract by
+A post-MVP goal is to have the transcompiler itself become a contract by
 compiling it to ewasm. Once this is accomplished, EVM1 contracts created by 
 the CREATE op will be transcompiled to ewasm. This will also allow us to assume
 that all EVM1 code is now transcompiled ewasm code, which should be reflected
-in the state root since the has of the code is stored in the Merkle trie. Note:
+in the state root since the hash of the code is stored in the Merkle trie. Note:
 this should still allow clients to fallback to EVM1 VMs if running EVM1 code.
