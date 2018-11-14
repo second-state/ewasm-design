@@ -10,7 +10,7 @@ This repository contains documents describing the design and high-level overview
 
 > WebAssembly (or Wasm as a contraction) is a new, portable, size- and load-time-efficient format. WebAssembly aims to execute at native speed by taking advantage of common hardware capabilities available on a wide range of platforms. WebAssembly is currently being designed as an open standard by a W3C Community Group.
 
-Please review the [WebAssembly](http://webassembly.org/) [design](http://webassembly.org/docs/high-level-goals/) and [instruction set]() first. (You can also make a pull request or raise an issue at the [Wasm Github repo](https://github.com/WebAssembly/design).)
+Please review the [WebAssembly](http://webassembly.org/) [design](http://webassembly.org/docs/high-level-goals/) and [instruction set](https://webassembly.github.io/spec/core/appendix/index-instructions.html#index-instr) first. (You can also make a pull request or raise an issue at the [Wasm Github repo](https://github.com/WebAssembly/design).)
 
 A few key points:
 * WebAssembly defines an instruction set, intermediate source format (WAST) and a binary encoded format (WASM).
