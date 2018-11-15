@@ -1,6 +1,6 @@
 # Ethereum flavored WebAssembly (ewasm)
 
-Specification **Revision 3**
+Specification **Revision 4**
 
 This repository contains documents describing the design and high-level overview of ewasm. Expect the contents of this repository to be in flux: everything is still under discussion.
 
