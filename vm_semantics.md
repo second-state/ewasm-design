@@ -10,4 +10,4 @@ If the signature is present, it must be executed as an ewasm contract, otherwise
 
 2. If there's no native EVM1 support in the client, it can use the [EVM Transcompiler](./evm_transcompiler.md) to translate the code.
 
-3. When deploying an ewasm contract, the bytecode must be verified and annotated by the *Sentinel Contract*.
+3. When deploying an ewasm contract, the bytecode must be verified and annotated by the [*Sentinel Contract*](./sentinel.md).
