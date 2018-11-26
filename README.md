@@ -71,7 +71,7 @@ ewasm:
 * [System contracts](./system_contracts.md)
 * [Backwards compatibility instructions](./backwards_compatibility.md)
 * [Original Proposal](https://github.com/ethereum/EIPs/issues/48) (EIP#48)
-* [WebAssembly Specification](https://github.com/WebAssembly/spec/blob/md-proto/md-proto/WebAssembly.md)
+* [WebAssembly Specification](https://webassembly.github.io/spec/)
 * [WebAssembly design documents](https://github.com/WebAssembly/design)
 
 ### Projects
