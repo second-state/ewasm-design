@@ -559,12 +559,12 @@ from last executed `call`, `callCode`, `callDelegate`, `callStatic` or `create`.
 
 **Returns**
 
+*nothing*
+
 **Trap conditions**
 
 - load `length` number of bytes from input data buffer at `dataOffset` results in out of bounds access,
 - store `length` number of bytes to memory at `resultOffset` results in out of bounds access.
-
-*nothing*
 
 ## selfDestruct
 
