@@ -497,7 +497,7 @@ account with non-empty associated code.
 
 ## finish
 
-Set the returning output data for the execution. This will cause a trap and the execution will be aborted immediately.
+Set the returning output data for the execution. This will halt the execution immediately.
 
 **Parameters**
 
@@ -514,7 +514,7 @@ Set the returning output data for the execution. This will cause a trap and the 
 
 ## revert
 
-Set the returning output data for the execution. This will cause a trap and the execution will be aborted immediately.
+Set the returning output data for the execution. This will halt the execution immediately and set the execution result to "reverted".
 
 **Parameters**
 
