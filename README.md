@@ -88,6 +88,4 @@ ewasm:
 For now, high-level design discussions should continue to be held in the design repository, via issues and pull requests. Feel free to file [issues](https://github.com/ethereum/ewasm-design/issues).
 
 ## Chat
-[Matrix](https://riot.im/app/#/room/#the_vertex:matrix.org)  
-IRC freenode@ewasm  
 [Gitter](https://gitter.im/ewasm/Lobby)  
