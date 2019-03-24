@@ -9,10 +9,11 @@ To reference EVM opcodes, try the [yellow paper](https://ethereum.github.io/yell
 To reference ewasm interface methods, see the [EEI spec](https://github.com/ewasm/design/blob/master/eth_interface.md).
 
 
-### EVM opcodes with corresponding ewasm methods (Ethereum Environment Interface (EEI) methods)
+### EVM opcodes (Byzantium) with corresponding ewasm methods (Ethereum Environment Interface (EEI) Revision 4)
 
 EVM opcode            |     ewasm interface method
 ----------------------|-----------------------------
+0x00: STOP            |      finish(0, 0)
 0x30: ADDRESS         |      getAddress
 0x31: BALANCE         |      getBalance
 0x32: ORIGIN          |      getTxOrigin
@@ -44,7 +45,7 @@ EVM opcode            |     ewasm interface method
 0xf0: CREATE          |      create
 0xf1: CALL            |      call
 0xf2: CALLCODE        |      callCode
-0xf3: RETURN          |      return
+0xf3: RETURN          |      finish
 0xf4: DELEGATECALL    |      callDelegate
 0xfa: STATICCALL      |      callStatic
 0xfd: REVERT          |      revert
@@ -78,7 +79,6 @@ To reference wasm instructions, see the [wasm spec](https://github.com/WebAssemb
 
 EVM opcode (256-bit)  |    wasm instruction i32/i64 (32-bit or 64-bit)
 ----------------------|----------------------
-0x00: STOP            |       end
 0x01: ADD             |       i32.add
 0x02: MUL             |       i32.mul
 0x03: SUB             |       i32.sub
