@@ -3,7 +3,7 @@
 The goal of this document is to describe the process of determining gas costs
 for ewasm instructions.
 
-Each WASM opcode is assigned an appropriate Intel IA-32 (x86) opcode (or a
+Each Wasm opcode is assigned an appropriate Intel IA-32 (x86) opcode (or a
 series of opcodes). These opcodes have a fixed cycle count (called *latency*
 by Intel). We are selecting one specific CPU model from the Haswell architecture
 (family: `06`, model `3C`). This equals to CPUs produced in 2014.
@@ -35,13 +35,13 @@ by the *metering injection contract*.
 ## Gas vs. *Particles*
 
 The current gas handling fields do not offer the precision needed assuming that
-running WASM opcodes takes significantly less processing power compared to EVM1
+running Wasm opcodes takes significantly less processing power compared to EVM1
 opcodes.
 
-*Rationale*: EVM1 opcodes operate on 256-bits of data, while WASM opcodes are limited
+*Rationale*: EVM1 opcodes operate on 256-bits of data, while Wasm opcodes are limited
 to at most 64-bits, which results in executing four instructions in the best
 case to match EVM1. Most arithmetic instructions in EVM1 cost 3 gas, which would
-amount to 0.75 gas for most 64-bit WASM instructions.
+amount to 0.75 gas for most 64-bit Wasm instructions.
 
 Internally, ewasm gas measurements should be recorded in a 64 bit variable
 with 4 decimal digits precision. We call this *particles*. It is a minor
