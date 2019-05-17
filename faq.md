@@ -1,11 +1,11 @@
 # FAQ
 
-WASM's FAQ can be found [here](https://github.com/WebAssembly/design/blob/master/FAQ.md) 
+Wasm's FAQ can be found [here](https://github.com/WebAssembly/design/blob/master/FAQ.md) 
 
 ## Is ewasm primarily the replacement for EVM?  
-Currently it is being researched as a replacement instruction set for EVM1. Other instruction sets have been considered but so far WASM seems the most suitable.
+Currently it is being researched as a replacement instruction set for EVM1. Other instruction sets have been considered but so far Wasm seems the most suitable.
 
-## What are alternatives to WASM?  
+## What are alternatives to Wasm?  
 Some that have been considered are [here](./comparison.md)
 
 ## What are the benefits?   
@@ -23,10 +23,10 @@ Not off the bat, a transcompiler will have to be created to compile existing EVM
 ## How does ewasm handle non-determinism when a variety of programming languages are allowed to be used?
 Part of the project goal is to eliminate nasal-demons. It's in the MVP. There are still a couple of edge case like sign values on NaNs but they can be canonicalized by AST transforms.  
 
-## Will ewasm be compatible with WASM?  
-Yes, the Ethereum System Interface can also be written in WASM.
+## Will ewasm be compatible with Wasm?  
+Yes, the Ethereum System Interface can also be written in Wasm.
 
-## Can ewasm be built even if WASM is not currently complete or will we need to wait for its completion/MVP?   
+## Can ewasm be built even if Wasm is not currently complete or will we need to wait for its completion/MVP?   
 Yes, but we would lose the "Shared tooling" benefit. So It might not make sense.
 
 ## Does ewasm use synchronous or asynchronous methods?
