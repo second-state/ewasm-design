@@ -9,6 +9,7 @@ This repository contains documents describing the design and high-level overview
 Please review the [WebAssembly](http://webassembly.org/) [design](http://webassembly.org/docs/high-level-goals/) and [instruction set]() first. (You can also make a pull request or raise an issue at the [Wasm Github repo](https://github.com/WebAssembly/design).)
 
 A few key points:
+
 * WebAssembly defines an instruction set, intermediate source format (WAST) and a binary encoded format (WASM).
 * WebAssembly has a few higher level features, such as the ability to import and execute outside methods defined via an interface.
 * [LLVM](https://llvm.org/) includes a WebAssembly backend to generate WASM output.
@@ -31,6 +32,7 @@ A few key points:
 ewasm is a restricted subset of WASM to be used for contracts in Ethereum.
 
 ewasm:
+
 * specifies the [VM semantics](./vm_semantics.md)
 * specifies the [semantics for an *ewasm contract*](./contract_interface.md)
 * specifies an [Ethereum environment interface](./eth_interface.md) to facilitate interaction with the Ethereum environment from an *ewasm contract*
