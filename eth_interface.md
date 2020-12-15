@@ -345,6 +345,30 @@ Creates a new contract with a given value.
 - load `dataLength` number of bytes from memory at `dataOffset` results in out of bounds access.
 - store `address` to memory at `resultOffset` results in out of bounds access.
 
+## create2
+
+Creates a new contract with a given value.
+
+**Parameters**
+
+-   `valueOffset` **i32ptr** the memory offset to load the value from (`u128`)
+-   `dataOffset` **i32ptr** the memory offset to load the code for the new contract from (`bytes`)
+-   `dataLength` **i32** the data length
+-   `saltOffset`  **i32ptr** the memory offset to load the salt from (`u256`)
+-   `resultOffset` **i32ptr** the memory offset to write the new contract address to (`address`)
+
+*Note*: `create` will clear the return buffer in case of success or may fill it with data coming from `revert`.
+
+**Returns**
+
+`result` **i32** Returns 0 on success, 1 on failure and 2 on `revert`
+
+**Trap conditions**
+
+- load `u128` from memory at `valueOffset` results in out of bounds access,
+- load `dataLength` number of bytes from memory at `dataOffset` results in out of bounds access.
+- store `address` to memory at `resultOffset` results in out of bounds access.
+
 ## getBlockDifficulty
 
 Get the block’s difficulty.
@@ -421,6 +445,22 @@ Get the block’s gas limit.
 **Returns**
 
 `blockGasLimit` **i64**
+
+## getChainId
+
+Get Id of the chain.
+
+**Parameters**
+
+-   `resultOffset` **i32ptr** the memory offset to write the value to (`u128`)
+
+**Returns**
+
+*nothing*
+
+**Trap conditions**
+
+- store `u128` to memory at `resultOffset` results in out of bounds access.
 
 ## getTxGasPrice
 
